@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CalmBridge AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <header class="header">
+
+        <div class="logo-circle">
+            🌿
+        </div>
+
+        <h1>CalmBridge AI</h1>
+
+        <h3>Your AI Companion for Emotional Well-being</h3>
+
+        <p class="tagline">
+            Speak freely. Reflect honestly. Grow stronger.
+        </p>
+
+    </header>
+
+    <section class="welcome-card">
+
+        <h2>How are you feeling today?</h2>
+
+        <p class="welcome-text">
+            Choose a mood or simply start talking. I'm here to listen without judgment.
+        </p>
+
+        <div class="moods">
+
+            <button class="mood">😊 Happy</button>
+
+            <button class="mood">😌 Calm</button>
+
+            <button class="mood">😔 Sad</button>
+
+            <button class="mood">😰 Anxious</button>
+
+            <button class="mood">😡 Angry</button>
+
+        </div>
+
+    </section>
+
+    <section id="chat-box">
+
+        <div class="message bot">
+
+            <strong>🌿 CalmBridge AI</strong><br><br>
+
+            Hello! 👋
+
+            <br><br>
+
+            I'm glad you're here.
+
+            This is a safe space where you can talk openly about your thoughts and emotions.
+
+            <br><br>
+
+            Whenever you're ready, tell me what's on your mind.
+
+        </div>
+
+    </section>
+
+    <div id="typing" class="typing hidden">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <div class="bottom">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Share what's on your mind..."
+            autocomplete="off"
+        >
+
+        <button id="send-btn">
+            Send
+        </button>
+
+    </div>
+
+    <button id="mic-btn" title="Start Voice Conversation">
+
+        🎤
+
+    </button>
+
+    <div class="footer">
+
+        <small>
+
+            CalmBridge AI provides emotional support and reflection.
+            It is not a substitute for professional mental health care.
+
+        </small>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
